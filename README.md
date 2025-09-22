@@ -5,7 +5,8 @@
   
 2.ScrollArea文件夹里面放置的是源码版本，如果编译版本不支持，可自行编译源码。
   
-为什么使用ListView和TileView？
-它们的底层都有一个共同的能力，就是虚拟化。举个例子:一个背包需要显示20W条数据，通常情况下你不可能创建20W个Widget来完成这个任务，显然这是不合理的，不是所有玩家的设备都可以顶住。于是就有了虚拟化的解决方案。可以用有限的项目通过滚动视图完成20W条的数据显示。
+为什么使用ListView和TileView？它们都可以用有限的Widget通过滚动视图完成数万条的数据显示。
 
-ScrollBox并不支持虚拟化，但是不代表不能为ScrollBox单独开发支持虚拟化的功能，当然你依然可以使用ScrollBox但是ListView和TileView同样可以完成ScrollBox的任务，毕竟是现成的，除非您的项目真的需要自定义。
+ScrollBox并不支持虚拟化，但是不代表不能为ScrollBox单独开发支持虚拟化的功能。
+  
+当然你依然可以使用ScrollBox但是ListView和TileView同样可以完成ScrollBox的任务，毕竟是现成的，除非您的项目真的需要自定义。
